@@ -21,5 +21,5 @@ mongoose.connect(dbAddress,{ useNewUrlParser: true, useFindAndModify: false, use
 var db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function(){
-    console.log("Connected to mongod server");
+    console.log("MongoDB Connected");
 });
